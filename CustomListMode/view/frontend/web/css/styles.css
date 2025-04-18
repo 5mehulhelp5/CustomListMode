@@ -1,0 +1,112 @@
+.products.wrapper.list.products-list {
+
+    .product-item-photo {
+        display: none;
+    }
+
+    .product-item {
+        width: 80%;
+        margin-bottom: 2px;
+
+        .tocart{
+            span {
+                display: none;
+            }
+        }
+        .tocart:before{
+            content: "+";
+            display: flex; flex-direction: row; align-items: center; justify-content: center;
+            height: 5px; width: 5px;
+            font-size: 40px; line-height: 105px; text-align: center; color: white;
+        }
+
+    }
+
+    .product-item-details {
+        display: flex;
+        .product-item-actions{
+            .qty {
+                position: relative;
+                display: inline-block;
+                width: 100px;
+                height: 35px;
+                margin: 0 10px;
+                text-align: center;
+                border: 1px solid #ccc;
+                background: #fff;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .qty-minus {
+
+                top: 0;
+                left: 0;
+                width: 30px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                cursor: pointer;
+                border-right: 1px solid #ccc;
+            }
+
+            .qty-plus {
+
+                top: 0;
+                right: 0;
+                width: 30px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                cursor: pointer;
+                border-left: 1px solid #ccc;
+            }
+        }
+    }
+
+    .product-item-actions {
+        form {
+            display: inline-flex;
+        }
+    }
+
+    .product-item-name {
+        min-width: 80%;
+        border-bottom: black solid 1px;
+    }
+
+    .product-item-info {
+        min-width: 65%;
+    }
+
+    .price-final_price {
+        margin-left: 10px;
+        min-width: 90px;
+
+    }
+
+    .popup_control {
+        display: inline-flex;
+    }
+    .product-item-inner {
+        .unavailable {
+            width: 100px;
+            color: darkred;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .product-item {
+            display: inline-flex;
+            width: 50%;
+        }
+
+    }
+}
+
+.products.wrapper.grid.products-grid {
+    .popup_control {
+        display: none;
+    }
+}
+

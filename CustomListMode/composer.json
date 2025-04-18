@@ -1,0 +1,17 @@
+{
+    "name": "magedelight/magento2-customlistmode",
+    "description": "Guide Demo for module",
+    "version": "1.0.0",
+    "require": {
+        "magento/module-backend": "~100.0.0"
+    },
+    "type": "magento2-module",
+    "extra": {
+        "map": [
+            [
+                "*",
+                "MyCompany/CustomListMode"
+            ]
+        ]
+    }
+}
